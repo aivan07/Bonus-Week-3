@@ -1,0 +1,97 @@
+/* ==========================================================================
+   Extras: validation messages, alerts, welcome banner
+   ========================================================================== */
+
+/* ---- Validation (login + register) ---- */
+
+.error-msg {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #ff8a8d;
+}
+
+.form-group input.input-error {
+    border-color: #ff4b52;
+    background: rgba(230, 36, 41, 0.12);
+}
+
+.form-group input.input-ok {
+    border-color: #3ecf8e;
+}
+
+.checkbox-label + .error-msg { margin-top: 4px; }
+
+.form-alert {
+    margin-bottom: 16px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-alert.d-none { display: none; }
+
+.form-alert.success {
+    background: rgba(62, 207, 142, 0.15);
+    border-color: #3ecf8e;
+    color: #b8f5d9;
+}
+
+.form-alert.error {
+    background: rgba(230, 36, 41, 0.18);
+    border-color: #ff4b52;
+    color: #ffd0d2;
+}
+
+.submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.demo-hint {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #9aa6d6;
+}
+
+.demo-hint code {
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+}
+
+/* ---- Landing page welcome banner ---- */
+
+.welcome-banner {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding: 6px 20px;
+    background: #fff;
+    color: #0a0b1a;
+    border: 3px solid #0a0b1a;
+    border-radius: 4px;
+    box-shadow: 5px 5px 0 #2a55d6;
+    font-family: "Bangers", Impact, sans-serif;
+    font-size: clamp(1.3rem, 4vw, 1.9rem);
+    letter-spacing: 0.05em;
+    transform: rotate(-1deg);
+}
+
+.welcome-banner span { color: #e8312f; }
+
+.navbar .btn-logout {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.navbar .btn-logout:hover {
+    background: #fff;
+    color: #0a0b1a;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Verse</title>
+    <script>
+        // Logged in -> landing page, otherwise -> login page
+        window.location.replace(sessionStorage.getItem("webverse_user") ? "landing.html" : "login.html");
+    </script>
+    <noscript><meta http-equiv="refresh" content="0; url=login.html"></noscript>
+</head>
+<body>
+    <p><a href="login.html">Continue to login</a></p>
+</body>
+</html>
